@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
 }
 
 h1 {
@@ -18,15 +18,14 @@ h2 {
   color: #222;
 }
 
-
 h4 {
-  font-size: 20px;  
+  font-size: 20px;
   color: #222;
 }
 
 h6 {
   font-weight: 700;
-  font-size: 12px;  
+  font-size: 12px;
 }
 
 p {
@@ -43,25 +42,50 @@ p {
   margin: 40px 0;
 }
 
+button.normal {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+
+button.white {
+  font-size: 19px;
+  font-weight: 600;
+  padding: 11px 18px;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid #fff;
+  outline: none;
+  transition: 0.2s;
+}
+
 body {
   width: 100%;
 }
-/* Header Start */ 
+/* Header Start */
 
-#header{
- display: flex;
- align-items: center;
- justify-content: space-between;
- padding:  20px 80px;
- background: #e3e6f3;
- box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
- z-index: 999;
- position: sticky;
- top: 0;
- left: 0;
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background: #e3e6f3;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
-#navbar{
+#navbar {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,7 +95,6 @@ body {
   list-style: none;
   padding: 0 20px;
   position: relative; /* como usamos position absolute no filho */
-
 }
 
 #navbar li a {
@@ -82,32 +105,33 @@ body {
   transition: 0.3s ease; /*Adicionar suavidade no Hover */
 }
 
-#navbar li a:hover ,
-#navbar li a.active{
+#navbar li a:hover,
+#navbar li a.active {
   color: #088178;
 }
 
 #navbar li a.active::after, /* Criando elemento de linha abaixo do nome */
-#navbar li a:hover::after { /*E quando passar o mouse a linha aparecça com hover */
+#navbar li a:hover::after {
+  /*E quando passar o mouse a linha aparecça com hover */
   content: "";
   width: 30%;
   height: 2px;
-  background:#088178; 
-  position: absolute; /* Temos que colocar no elemento pai como relative */ 
+  background: #088178;
+  position: absolute; /* Temos que colocar no elemento pai como relative */
   bottom: -4px;
   left: 20px;
-
 }
 
 /* Home Page*/
 
-  /*Seção Hero */ 
-#hero {/*Centralizando nossa imagem ao centro */
-  background-image: url('img/hero4.png');
+/*Seção Hero */
+#hero {
+  /*Centralizando nossa imagem ao centro */
+  background-image: url("img/hero4.png");
   height: 90vh;
   width: 100%;
-  background-size: cover; 
-  background-position: top 25% right 0; 
+  background-size: cover;
+  background-position: top 25% right 0;
   padding: 0 80px;
   display: flex;
   flex-direction: column;
@@ -124,7 +148,7 @@ body {
 }
 
 #hero button {
-  background-image: url('img/button.png');
+  background-image: url("img/button.png");
   background-color: transparent;
   color: #088178;
   border: 0;
@@ -136,20 +160,19 @@ body {
 }
 
 /*-------------------------------------------------------------------------*/
-/*Seção Feature */ 
+/*Seção Feature */
 #Feature {
-display: flex;
-align-items: center;
-justify-content: space-between;
-flex-wrap: wrap;
-
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-#Feature .feature-box{
+#Feature .feature-box {
   width: 180px;
   text-align: center;
   padding: 25px 15px;
-  box-shadow: 20px 20px 34px rgba(0, 0 , 0, 0.03);
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
   border: 1px solid #cce7d0;
   border-radius: 4px;
   margin: 15px 0;
@@ -157,15 +180,15 @@ flex-wrap: wrap;
 
 #Feature .feature-box:hover {
   box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
-
 }
 
-#Feature .feature-box img { /*Deixando nossa imagem responsiva */
+#Feature .feature-box img {
+  /*Deixando nossa imagem responsiva */
   width: 100%;
   margin-bottom: 10px;
 }
 
-#Feature .feature-box h6{
+#Feature .feature-box h6 {
   display: inline-block;
   padding: 9px 8px 6px 8px;
   line-height: 1;
@@ -175,19 +198,19 @@ flex-wrap: wrap;
 }
 
 /*Alterando a cor de background dos itens filhos h6 do feature-box individualmente */
-#Feature .feature-box:nth-child(2) h6{
+#Feature .feature-box:nth-child(2) h6 {
   background-color: #cdebbc;
 }
-#Feature .feature-box:nth-child(3) h6{
+#Feature .feature-box:nth-child(3) h6 {
   background-color: #d1e8f2;
 }
-#Feature .feature-box:nth-child(4) h6{
+#Feature .feature-box:nth-child(4) h6 {
   background-color: #cdd4f8;
 }
-#Feature .feature-box:nth-child(5) h6{
+#Feature .feature-box:nth-child(5) h6 {
   background-color: #d6dbf6;
 }
-#Feature .feature-box:nth-child() h6{
+#Feature .feature-box:nth-child() h6 {
   background-color: #fff2e5;
 }
 
@@ -219,7 +242,8 @@ flex-wrap: wrap;
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
 }
 
-#product1 .pro img { /* Tornando imagem responsiva */
+#product1 .pro img {
+  /* Tornando imagem responsiva */
   width: 100%;
   border-radius: 20px;
 }
@@ -230,7 +254,7 @@ flex-wrap: wrap;
 }
 
 #product1 .pro .description span {
-  color: #606063 ;
+  color: #606063;
   font-size: 12px;
 }
 
@@ -242,7 +266,7 @@ flex-wrap: wrap;
 
 #product1 .pro .description i {
   font-size: 12px;
-  color: rgba(243, 181, 25)
+  color: rgba(243, 181, 25);
 }
 
 #product1 .pro .description h4 {
@@ -252,15 +276,15 @@ flex-wrap: wrap;
   color: #088178;
 }
 
-
-#product1 .pro .cart { /*Adicionei o nome 'cart' ao icone importado para facilitar */
+#product1 .pro .cart {
+  /*Adicionei o nome 'cart' ao icone importado para facilitar */
   width: 40px;
   height: 40px;
   line-height: 40px;
   border-radius: 50px;
-  background-color: #e8f6ea;  
+  background-color: #e8f6ea;
   color: #088178;
-  border:  1px solid #cce7d0;
+  border: 1px solid #cce7d0;
   position: absolute;
   bottom: 20px;
   right: 10px;
@@ -268,3 +292,185 @@ flex-wrap: wrap;
   margin-bottom: 5px;
 }
 
+/*-------------------------------------------------------------------------*/
+/* Seção Banner */
+
+#banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("img/banner/b2.jpg");
+  width: 100%;
+  height: 40vh;
+  background-position: center;
+}
+
+#banner h4 {
+  color: #fff;
+  font-size: 16px;
+}
+
+#banner h2 {
+  color: #fff;
+  font-size: 30px;
+  padding: 10px 0;
+}
+
+#banner h2 span {
+  color: #ef3636;
+}
+
+#banner button:hover {
+  background: #088178;
+  color: #fff;
+}
+
+/*-------------------------------------------------------------------------*/
+/*Seção SM-Banner  */
+
+#sm-banner {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#sm-banner .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("img/banner/b17.jpg");
+  min-width: 48%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+
+#sm-banner .banner-box-2 {
+  background-image: url("img/banner/b10.jpg");
+}
+
+#sm-banner h4 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+#sm-banner h2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+#sm-banner span {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+
+#sm-banner .banner-box:hover button {
+  background: #088178;
+  border: 1px solid #088178;
+}
+
+/*-------------------------------------------------------------------------*/
+
+#banner-3 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 0 40px;
+}
+#banner-3 .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("img/banner/b7.jpg");
+  min-width: 29%;
+  height: 20vh;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+#banner-3 .banner-box2 {
+  background-image: url("img/banner/b4.jpg");
+}
+
+#banner-3 .banner-box3 {
+  background-image: url("img/banner/b18.jpg");
+}
+
+#banner-3 h2 {
+  color: #fff;
+  font-weight: ;
+  font-weight: 900;
+  font-size: 22px;
+}
+
+#banner-3 h3 {
+  color: #ec544e;
+  font-weight: 800;
+  font-size: 19px;
+}
+
+/*-------------------------------------------------------------------------*/
+/*Seção Newsletter */
+#newsletter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url("img/banner/b14.png");
+  background-repeat: no-repeat;
+  background-position: 20% 30%;
+  background-color: #041e42;
+}
+
+#newsletter h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+
+#newsletter p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #818ea0;
+}
+
+#newsletter p span {
+  color: #ffbd27;
+}
+
+#newsletter .form {
+  display: flex;
+  width: 40%;
+}
+
+#newsletter input {
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-radius: 0;
+}
+
+#newsletter button {
+  background-color: #088178;
+  color: #fff;
+  white-space: nowrap;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-radius: 0;
+}
