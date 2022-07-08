@@ -408,7 +408,6 @@ body {
 
 #banner-3 h2 {
   color: #fff;
-  font-weight: ;
   font-weight: 900;
   font-size: 22px;
 }
@@ -535,7 +534,206 @@ footer a:hover {
   color: #088178;
 }
 
+#mobile {
+  /* Ocultamos o menu hamburguer que sera ativado nas @media querys */
+  display: none;
+  align-items: center;
+}
+
+#close {
+  /* icone de "x' que foi inserido para aparecer no meunu mobile e retirar no desktop */
+  display: none;
+}
+
 footer .copyright {
   width: 100%;
   text-align: center;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*Media Query */
+
+/* Tablet */
+@media (max-width: 799px) {
+  .section-p1 {
+    padding: 40px 40px;
+  }
+
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px; /*Colocamos -300px para esconder o menu quando utilizar hamburguer */
+    height: 100vh;
+    width: 300px;
+    background-color: #e3e6f3;
+    box-shadow: 0 40px 60px rgb(0, 0, 0, 0.1);
+    padding: 80px 0 0 10px;
+    transition: 0.3s;
+  }
+
+  #navbar.actives {
+    right: 0px; /*classe que criamos para adicionar efeito de aparecer menu */
+  }
+
+  #navbar li {
+    margin-bottom: 25px;
+  }
+
+  #mobile {
+    /* Ativamos o menu hamburguer que sera ativado nas @media querys */
+    display: flex;
+    align-items: center;
+  }
+
+  #mobile i {
+    color: #1a1a1a;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+
+  #close {
+    /* Adicionando o icon 'X" para fechar o menu hamburguer */
+    display: initial;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #222;
+    font-size: 24px;
+  }
+
+  #lg-bag {
+    /* Para desaparecer do menu hamburguer a sacola de compras, inserimos none */
+    display: none;
+  }
+
+  #hero {
+    height: 70vh;
+    padding: 0 80px;
+    background-position: top 30% right 30%;
+  }
+
+  #Feature {
+    justify-content: center;
+  }
+
+  #Feature .feature-box {
+    margin: 15px 15px;
+  }
+
+  #product1 .product-container {
+    justify-content: center;
+  }
+
+  #product1 .pro {
+    margin: 15px;
+  }
+
+  #banner {
+    height: 20vh;
+  }
+
+  #sm-banner .banner-box {
+    min-width: 100%;
+    height: 30vh;
+  }
+
+  #banner-3 {
+    padding: 0 40px;
+  }
+
+  #banner-3 .banner-box {
+    width: 28%;
+  }
+
+  #banner-3 h2 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  #newsletter .form {
+    width: 75%;
+  }
+
+  footer a {
+    margin-bottom: 30px;
+  }
+}
+
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*Media Query */
+
+/* Celular */
+@media (max-width: 477px) {
+  .section-p1 {
+    padding: 20px;
+  }
+
+  #header {
+    padding: 10px 30px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  #hero {
+    padding: 0 20px;
+    background-position: 55%;
+    margin-bottom: 15px;
+  }
+
+  #Feature {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px;
+  }
+
+  #Feature .feature-box {
+    width: 150px;
+    padding: 5px 5px;
+    margin: 5px 5px;
+  }
+
+  #product1 .pro {
+    width: 100%;
+  }
+
+  #banner {
+    height: 40vh;
+  }
+
+  #sm-banner .banner-box {
+    height: 40vh;
+  }
+
+  .banner-box.banner-box-2 {
+    margin: 20px;
+  }
+
+  #banner-3 {
+    padding: 0 10px;
+  }
+
+  #banner-3 .banner-box {
+    width: 100%;
+  }
+
+  #newsletter {
+    padding: 40px 20px;
+  }
+  #newsletter .form {
+    width: 100%;
+  }
 }
