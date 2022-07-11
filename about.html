@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>E-commerce Website</title>
+    <script
+      src="https://kit.fontawesome.com/f987163c11.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Seção Navbar-->
+    <section id="header">
+      <a href="#"><img src="img/logo.png" class="logo" alt="" /></a>
+      <div>
+        <ul id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a class="active" href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li id="lg-bag">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+          </li>
+          <!-- Adicionando Botão de fechar do menu Hamburguer-->
+          <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+        </ul>
+      </div>
+      <!-- Menu Mobile -->
+      <div id="mobile">
+        <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        <i id="bar" class="fas fa-outdent"></i>
+      </div>
+    </section>
+
+    <!-- Seção Hero-->
+    <section id="page-header" class="about-header">
+      <h2>#SobreNos</h2>
+      <p>Descubra mais sobre nossa empresa e serviços!</p>
+    </section>
+
+    <!-- Seção about-->
+    <section id="about-head" class="section-p1">
+      <img src="img/about/a6.jpg" alt="" />
+      <div>
+        <h2>Quem somos Nos?</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+          assumenda nemo veniam consequuntur enim! Eum non quos, facere quaerat
+          quas laborum alias fugiat tempora aliquid dicta eveniet nisi maiores
+          hic.
+        </p>
+        <abbr title="">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, ab
+          officiis nobis excepturi ipsam voluptatem, molestiae sed maiores
+          praesentium!</abbr
+        >
+        <br /><br />
+        <marquee bgcolor="#ccc" loop="-1" scrollamount="5" width="100%"
+          >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
+          laudantium neque voluptatum ex dolore asperiores blanditiis sapiente
+          voluptate laborum</marquee
+        >
+      </div>
+    </section>
+
+    <!-- Seção app-->
+    <section id="about-app" class="section-p1">
+      <h1>Faça o download do Nosso <a href="#">APP</a></h1>
+      <div class="video">
+        <video autoplay muted loop src="img/about/1.mp4"></video>
+      </div>
+    </section>
+
+        <!-- Seção Feature-->  
+        <section id="Feature" class="section-p1">
+          <div class="feature-box">
+            <img src="img/features/f1.png" alt="">
+            <h6>Envio Gratis</h6>        
+          </div>
+          <div class="feature-box">
+            <img src="img/features/f2.png" alt="">
+            <h6>Pedido Online 24Hrs</h6>        
+          </div>      <div class="feature-box">
+            <img src="img/features/f3.png" alt="">
+            <h6>Economize</h6>        
+          </div>      <div class="feature-box">
+            <img src="img/features/f4.png" alt="">
+            <h6>Promoções</h6>        
+          </div>      <div class="feature-box">
+            <img src="img/features/f5.png" alt="">
+            <h6>Boas Compras</h6>        
+          </div>
+        </div>      <div class="feature-box">
+          <img src="img/features/f6.png" alt="">
+          <h6>Suporte 24/7</h6>        
+        </div>
+        </section>
+        
+    <!-- Seção newletter--> 
+    <section id="newsletter" class="section-p1 section-m1">
+      <div class="newstext">
+        <h4>Siga noss bewsletter</h4>
+        <p>Receba no seu e-mail as ultimas novidades da nossa loja com <span>ofertas especiais para você!</span> </p> 
+      </div>
+      <div class="form">
+        <input type="text" placeholder="Seu endereço de e-mail">
+        <button class="normal">Cadastre-se Hoje</button>
+      </div>
+    </section>       
+
+    <!-- Seção footer-->
+    <footer class="section-p1">
+      <div class="col">
+        <img class="logo" src="img/logo.png" alt="" />
+        <h4>Contato</h4>
+        <p><strong>Endereço:</strong> Rua da Praia, 778, Santos-SP</p>
+        <p><strong>Telefone:</strong> (88) 3256-5874</p>
+        <p><strong>Horario:</strong> Seg á sexta : 08:00 ás 18:00</p>
+        <div class="follow">
+          <h4>Nos Siga nas Redes Sociais</h4>
+          <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-pinterest-p"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <h4>Sobre</h4>
+        <a href="#">Sobre Nós</a>
+        <a href="#">Informações de entrega</a>
+        <a href="#">Politica de Privacidade</a>
+        <a href="#">Termos & Condições</a>
+        <a href="#">Entre em Contato</a>
+      </div>
+
+      <div class="col">
+        <h4>Minha conta</h4>
+        <a href="#">Entrar</a>
+        <a href="#">Meu carrinho</a>
+        <a href="#">Minha lista</a>
+        <a href="#">Alterar meu pedido</a>
+        <a href="#">Ajuda</a>
+      </div>
+
+      <div class="col install">
+        <h4>Intale App</h4>
+        <p>Para App Store ou Google Play</p>
+        <div class="row">
+          <img src="img/pay/app.jpg" alt="" />
+          <img src="img/pay/play.jpg" alt="" />
+        </div>
+        <p>Pagamento Seguro</p>
+        <img src="img/pay/pay.png" alt="" />
+      </div>
+
+      <div class="copyright">
+        <p>@ 2022, hebert.devs - Loja E-Commerce Website</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
