@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>E-commerce Website</title>
+    <script
+      src="https://kit.fontawesome.com/f987163c11.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Seção Navbar-->
+    <section id="header">
+      <a href="#"><img src="img/logo.png" class="logo" alt="" /></a>
+      <div>
+        <ul id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li id="lg-bag">
+            <a class="active" href="cart.html"
+              ><i class="fa-solid fa-bag-shopping"></i
+            ></a>
+          </li>
+          <!-- Adicionando Botão de fechar do menu Hamburguer-->
+          <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+        </ul>
+      </div>
+      <!-- Menu Mobile -->
+      <div id="mobile">
+        <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        <i id="bar" class="fas fa-outdent"></i>
+      </div>
+    </section>
+
+    <!-- Seção Hero-->
+    <section id="page-header" class="about-header">
+      <h2>#VamosConversar</h2>
+      <p>Entre em contato com a gente!</p>
+    </section>
+
+    <!-- Seção cart-->
+    <section id="cart" class="section-p1">
+      <table width="100%">
+        <thead>
+          <tr>
+            <td>Remover</td>
+            <td>Imagem</td>
+            <td>Produto</td>
+            <td>Preço</td>
+            <td>Quantidade</td>
+            <td>Subtotal</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a href="#"><i class="far fa-times-circle"></i></a>
+            </td>
+            <td>
+              <img src="img/products/f1.jpg" alt="" />
+            </td>
+            <td>Cartoon Astronaut T-Shirt</td>
+            <td>R$129,30</td>
+            <td><input type="number" value="1" /></td>
+            <td>R$110,20</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#"><i class="far fa-times-circle"></i></a>
+            </td>
+            <td>
+              <img src="img/products/f2.jpg" alt="" />
+            </td>
+            <td>Anatomic Floral T-Shirt</td>
+            <td>R$145,30</td>
+            <td><input type="number" value="1" /></td>
+            <td>R$162,20</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#"><i class="far fa-times-circle"></i></a>
+            </td>
+            <td>
+              <img src="img/products/f3.jpg" alt="" />
+            </td>
+            <td>Essence Space T-Shirt</td>
+            <td>R$118,30</td>
+            <td><input type="number" value="1" /></td>
+            <td>R$150,20</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Seção cart-add-->
+    <section id="cart-add" class="section-p1">
+      <div id="coupon">
+        <h3>Aplicar Cupom</h3>
+        <div>
+          <input type="text" placeholder="Aplique seu Cupom" />
+          <button class="normal">Aplicar</button>
+        </div>
+      </div>
+
+      <div id="subtotal">
+        <h3>Total do Carrinho</h3>
+        <table>
+          <tr>
+            <td>Subtotal do Carrinho</td>
+            <td>R$ 345,32</td>
+          </tr>
+          <tr>
+            <td>Frete</td>
+            <td>Gratis</td>
+          </tr>
+          <tr>
+            <td><strong>Total</strong></td>
+            <td><strong>R$ 345,32</strong></td>
+          </tr>
+        </table>
+        <button class="normal">Finalizar a Compra</button>
+      </div>
+    </section>
+    <!-- Seção footer-->
+    <footer class="section-p1">
+      <div class="col">
+        <img class="logo" src="img/logo.png" alt="" />
+        <h4>Contato</h4>
+        <p><strong>Endereço:</strong> Rua da Praia, 778, Santos-SP</p>
+        <p><strong>Telefone:</strong> (88) 3256-5874</p>
+        <p><strong>Horario:</strong> Seg á sexta : 08:00 ás 18:00</p>
+        <div class="follow">
+          <h4>Nos Siga nas Redes Sociais</h4>
+          <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-pinterest-p"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <h4>Sobre</h4>
+        <a href="#">Sobre Nós</a>
+        <a href="#">Informações de entrega</a>
+        <a href="#">Politica de Privacidade</a>
+        <a href="#">Termos & Condições</a>
+        <a href="#">Entre em Contato</a>
+      </div>
+
+      <div class="col">
+        <h4>Minha conta</h4>
+        <a href="#">Entrar</a>
+        <a href="#">Meu carrinho</a>
+        <a href="#">Minha lista</a>
+        <a href="#">Alterar meu pedido</a>
+        <a href="#">Ajuda</a>
+      </div>
+
+      <div class="col install">
+        <h4>Intale App</h4>
+        <p>Para App Store ou Google Play</p>
+        <div class="row">
+          <img src="img/pay/app.jpg" alt="" />
+          <img src="img/pay/play.jpg" alt="" />
+        </div>
+        <p>Pagamento Seguro</p>
+        <img src="img/pay/pay.png" alt="" />
+      </div>
+
+      <div class="copyright">
+        <p>@ 2022, hebert.devs - Loja E-Commerce Website</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
